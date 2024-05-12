@@ -1,0 +1,9 @@
+Timestamp: 2024-04-21 16:08:14
+localhost.localdomain
+ 16:08:07 up 2 days, 19:21,  1 user,  load average: 0.00, 0.01, 0.05
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.7G
+14G
+1014M
+
+

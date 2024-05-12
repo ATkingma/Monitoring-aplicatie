@@ -1,0 +1,557 @@
+Timestamp: 2024-04-21 16:11:29
+localhost
+Sun Apr 21 02:11:27 PM UTC 2024
+ 14:11:27 up 2 days, 18:34,  4 users,  load average: 0.00, 0.00, 0.00
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.8Gi
+14G
+1.7G
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:50:56:9a:97:ad brd ff:ff:ff:ff:ff:ff
+    altname enp11s0
+    inet 192.168.1.108/24 metric 100 brd 192.168.1.255 scope global dynamic ens192
+       valid_lft 5360sec preferred_lft 5360sec
+    inet6 fe80::250:56ff:fe9a:97ad/64 scope link 
+       valid_lft forever preferred_lft forever
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3 102176 13000 ?        Ss   Apr18   0:08 /lib/systemd/systemd --system --deserialize 49
+root           2  0.0  0.0      0     0 ?        S    Apr18   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Apr18   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Apr18   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Apr18   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   Apr18   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   Apr18   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    Apr18   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    Apr18   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    Apr18   0:01 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    Apr18   0:17 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    Apr18   0:01 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    Apr18   0:00 [idle_inject/0]
+root          18  0.0  0.0      0     0 ?        S    Apr18   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    Apr18   0:00 [kdevtmpfs]
+root          20  0.0  0.0      0     0 ?        I<   Apr18   0:00 [inet_frag_wq]
+root          21  0.0  0.0      0     0 ?        S    Apr18   0:00 [kauditd]
+root          22  0.0  0.0      0     0 ?        S    Apr18   0:00 [khungtaskd]
+root          23  0.0  0.0      0     0 ?        S    Apr18   0:00 [oom_reaper]
+root          24  0.0  0.0      0     0 ?        I<   Apr18   0:00 [writeback]
+root          25  0.0  0.0      0     0 ?        S    Apr18   0:07 [kcompactd0]
+root          26  0.0  0.0      0     0 ?        SN   Apr18   0:00 [ksmd]
+root          27  0.0  0.0      0     0 ?        SN   Apr18   0:00 [khugepaged]
+root          73  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kintegrityd]
+root          74  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kblockd]
+root          75  0.0  0.0      0     0 ?        I<   Apr18   0:00 [blkcg_punt_bio]
+root          76  0.0  0.0      0     0 ?        I<   Apr18   0:00 [tpm_dev_wq]
+root          77  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ata_sff]
+root          78  0.0  0.0      0     0 ?        I<   Apr18   0:00 [md]
+root          79  0.0  0.0      0     0 ?        I<   Apr18   0:00 [edac-poller]
+root          80  0.0  0.0      0     0 ?        I<   Apr18   0:00 [devfreq_wq]
+root          81  0.0  0.0      0     0 ?        S    Apr18   0:00 [watchdogd]
+root          83  0.0  0.0      0     0 ?        I<   Apr18   0:02 [kworker/0:1H-kblockd]
+root          85  0.0  0.0      0     0 ?        S    Apr18   0:00 [kswapd0]
+root          86  0.0  0.0      0     0 ?        S    Apr18   0:00 [ecryptfs-kthrea]
+root          88  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kthrotld]
+root          89  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/24-pciehp]
+root          90  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/25-pciehp]
+root          91  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/26-pciehp]
+root          92  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/27-pciehp]
+root          93  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/28-pciehp]
+root          94  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/29-pciehp]
+root          95  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/30-pciehp]
+root          96  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/31-pciehp]
+root          97  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/32-pciehp]
+root          98  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/33-pciehp]
+root          99  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/34-pciehp]
+root         100  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/35-pciehp]
+root         101  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/36-pciehp]
+root         102  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/37-pciehp]
+root         103  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/38-pciehp]
+root         104  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/39-pciehp]
+root         105  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/40-pciehp]
+root         106  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/41-pciehp]
+root         107  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/42-pciehp]
+root         108  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/43-pciehp]
+root         109  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/44-pciehp]
+root         110  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/45-pciehp]
+root         111  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/46-pciehp]
+root         112  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/47-pciehp]
+root         113  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/48-pciehp]
+root         114  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/49-pciehp]
+root         115  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/50-pciehp]
+root         116  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/51-pciehp]
+root         117  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/52-pciehp]
+root         118  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/53-pciehp]
+root         119  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/54-pciehp]
+root         120  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/55-pciehp]
+root         121  0.0  0.0      0     0 ?        I<   Apr18   0:00 [acpi_thermal_pm]
+root         123  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_0]
+root         124  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_0]
+root         125  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_1]
+root         126  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_1]
+root         128  0.0  0.0      0     0 ?        I<   Apr18   0:00 [vfio-irqfd-clea]
+root         130  0.0  0.0      0     0 ?        I<   Apr18   0:00 [mld]
+root         131  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ipv6_addrconf]
+root         141  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kstrp]
+root         144  0.0  0.0      0     0 ?        I<   Apr18   0:00 [zswap-shrink]
+root         145  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kworker/u3:0]
+root         150  0.0  0.0      0     0 ?        I<   Apr18   0:00 [charger_manager]
+root         193  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_2]
+root         194  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_2]
+root         195  0.0  0.0      0     0 ?        I<   Apr18   0:00 [vmw_pvscsi_wq_2]
+root         196  0.0  0.0      0     0 ?        I<   Apr18   0:00 [cryptd]
+root         197  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_3]
+root         198  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_3]
+root         199  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_4]
+root         200  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_4]
+root         206  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_5]
+root         210  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_5]
+root         211  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_6]
+root         216  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_6]
+root         221  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_7]
+root         222  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_7]
+root         223  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_8]
+root         225  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_8]
+root         226  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_9]
+root         228  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_9]
+root         230  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_10]
+root         232  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_10]
+root         234  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_11]
+root         236  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_11]
+root         238  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_12]
+root         240  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_12]
+root         243  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_13]
+root         245  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_13]
+root         247  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_14]
+root         249  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ttm_swap]
+root         250  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_14]
+root         252  0.0  0.0      0     0 ?        S    Apr18   0:15 [irq/16-vmwgfx]
+root         254  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_15]
+root         256  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc0]
+root         258  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_15]
+root         259  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_16]
+root         262  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_16]
+root         263  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_17]
+root         265  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_17]
+root         267  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc1]
+root         269  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_18]
+root         271  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc2]
+root         272  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_18]
+root         273  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc3]
+root         274  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_19]
+root         275  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc4]
+root         276  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_19]
+root         277  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc5]
+root         278  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_20]
+root         279  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc6]
+root         280  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_20]
+root         281  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc7]
+root         282  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_21]
+root         283  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_21]
+root         284  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_22]
+root         285  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_22]
+root         286  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_23]
+root         287  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_23]
+root         288  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_24]
+root         289  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_24]
+root         291  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_25]
+root         292  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_25]
+root         294  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_26]
+root         295  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_26]
+root         296  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_27]
+root         297  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_27]
+root         298  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_28]
+root         299  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_28]
+root         300  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_29]
+root         301  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_29]
+root         302  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_30]
+root         303  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_30]
+root         304  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_31]
+root         305  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_31]
+root         306  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_32]
+root         307  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_32]
+root         340  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kdmflush]
+root         374  0.0  0.0      0     0 ?        I<   Apr18   0:00 [raid5wq]
+root         425  0.0  0.0      0     0 ?        S    Apr18   0:01 [jbd2/dm-0-8]
+root         426  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ext4-rsv-conver]
+root         496  0.0  0.5  64252 21988 ?        S<s  Apr18   0:01 /lib/systemd/systemd-journald
+root         528  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kaluad]
+root         529  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpath_rdacd]
+root         530  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpathd]
+root         531  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpath_handlerd]
+root         532  0.0  0.6 354888 27100 ?        SLsl Apr18   0:15 /sbin/multipathd -d -s
+root         536  0.0  0.1  11836  6464 ?        Ss   Apr18   0:00 /lib/systemd/systemd-udevd
+root         665  0.0  0.0      0     0 ?        S    Apr18   0:00 [jbd2/sda2-8]
+root         666  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ext4-rsv-conver]
+systemd+     702  0.0  0.1  89360  6508 ?        Ssl  Apr18   0:00 /lib/systemd/systemd-timesyncd
+root         754  0.0  0.2  51144 11800 ?        Ss   Apr18   0:00 /usr/bin/VGAuthService
+root         756  0.0  0.2 315116  9644 ?        Ssl  Apr18   3:30 /usr/bin/vmtoolsd
+systemd+     877  0.0  0.2  16248  8280 ?        Ss   Apr18   0:00 /lib/systemd/systemd-networkd
+systemd+     879  0.0  0.3  25536 12648 ?        Ss   Apr18   0:00 /lib/systemd/systemd-resolved
+root         920  0.0  0.0   6896  2868 ?        Ss   Apr18   0:00 /usr/sbin/cron -f -P
+message+     921  0.0  0.1   8896  4608 ?        Ss   Apr18   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         929  0.0  0.4  32732 19032 ?        Ss   Apr18   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         930  0.0  0.1 234496  6812 ?        Ssl  Apr18   0:00 /usr/libexec/polkitd --no-debug
+syslog       931  0.0  0.1 222404  5268 ?        Ssl  Apr18   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         933  0.0  0.7 1319680 31744 ?       Ssl  Apr18   0:10 /usr/lib/snapd/snapd
+root         934  0.0  0.1  15556  7520 ?        Ss   Apr18   0:00 /lib/systemd/systemd-logind
+root         936  0.0  0.3 392596 12800 ?        Ssl  Apr18   0:00 /usr/libexec/udisks2/udisksd
+root         942  0.0  0.1   7824  4312 tty1     Ss   Apr18   0:00 /bin/login -p --
+root         972  0.0  0.3 317964 12392 ?        Ssl  Apr18   0:00 /usr/sbin/ModemManager
+root         992  0.0  0.5 109756 21504 ?        Ssl  Apr18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1883  0.0  0.2 313224  8956 ?        Ssl  Apr18   0:00 /usr/libexec/upowerd
+student     2056  0.0  0.2  17108  9500 ?        Ss   Apr18   0:00 /lib/systemd/systemd --user
+student     2058  0.0  0.1 104984  5020 ?        S    Apr18   0:00 (sd-pam)
+student     2064  0.0  0.1   8744  5180 tty1     S    Apr18   0:00 -bash
+root        2161  0.0  0.1  11504  5496 tty1     S+   Apr18   0:00 sudo -s
+root        2162  0.0  0.0  11504   884 pts/0    Ss   Apr18   0:00 sudo -s
+root        2163  0.0  0.1   7636  4028 pts/0    S+   Apr18   0:00 /bin/bash
+root        3026  0.0  0.5 295584 20464 ?        Ssl  Apr18   0:01 /usr/libexec/packagekitd
+root        3891  0.0  0.2  15432  9084 ?        Ss   Apr18   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       50720  0.0  0.0      0     0 ?        I    Apr20   0:00 [kworker/0:1-cgroup_destroy]
+root       53849  0.0  0.0      0     0 ?        I    11:42   0:05 [kworker/0:0-cgroup_destroy]
+root       53881  0.0  0.0      0     0 ?        I    12:49   0:00 [kworker/u2:1-events_power_efficient]
+root       53899  0.0  0.0      0     0 ?        I    13:27   0:00 [kworker/u2:0-events_power_efficient]
+root       53916  0.0  0.0      0     0 ?        I    14:04   0:00 [kworker/u2:2-events_unbound]
+root       54092  0.0  0.0      0     0 ?        I    14:07   0:00 [kworker/0:2-events]
+root       54093  0.0  0.2  17188 10840 ?        Ss   14:07   0:00 sshd: student [priv]
+student    54141  0.0  0.1  17320  7972 ?        S    14:07   0:00 sshd: student@pts/1
+student    54142  0.0  0.1   8732  5400 pts/1    Ss+  14:07   0:00 -bash
+root       54212  0.0  0.2  17188 10812 ?        Ss   14:09   0:00 sshd: student [priv]
+student    54269  0.0  0.1  17320  7944 ?        S    14:10   0:00 sshd: student@pts/2
+student    54270  0.0  0.1   8732  5420 pts/2    Ss+  14:10   0:00 -bash
+root       54279  0.0  0.0      0     0 ?        I    14:10   0:00 [kworker/u2:3]
+root       54280  0.0  0.2  17188 11000 ?        Ss   14:11   0:00 sshd: student [priv]
+student    54337  0.0  0.2  17320  8064 ?        S    14:11   0:00 sshd: student@notty
+student    54338  0.0  0.0   7372  3668 ?        Ss   14:11   0:00 bash -c hostname && date && uptime && cat /proc/cpuinfo | grep 'model name' | uniq && free -h | awk '/^Mem/ {print $2}' && df -h | awk '/^\// {print $2}' && ip addr show && ps aux && cat /etc/passwd
+student    54350  0.0  0.0  10072  1608 ?        R    14:11   0:00 ps aux
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+student:x:1000:1000:student:/home/student:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+fwupd-refresh:x:113:119:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+
+
+Timestamp: 2024-04-21 17:22:25
+localhost
+Sun Apr 21 05:22:23 PM CEST 2024
+ 17:22:23 up 2 days, 19:45,  4 users,  load average: 0.00, 0.00, 0.00
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.8Gi
+14G
+1.7G
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:50:56:9a:97:ad brd ff:ff:ff:ff:ff:ff
+    altname enp11s0
+    inet 192.168.1.108/24 metric 100 brd 192.168.1.255 scope global dynamic ens192
+       valid_lft 4703sec preferred_lft 4703sec
+    inet6 fe80::250:56ff:fe9a:97ad/64 scope link 
+       valid_lft forever preferred_lft forever
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3 102176 13000 ?        Ss   Apr18   0:08 /lib/systemd/systemd --system --deserialize 49
+root           2  0.0  0.0      0     0 ?        S    Apr18   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Apr18   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Apr18   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Apr18   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   Apr18   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   Apr18   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    Apr18   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    Apr18   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    Apr18   0:01 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    Apr18   0:18 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    Apr18   0:01 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    Apr18   0:00 [idle_inject/0]
+root          18  0.0  0.0      0     0 ?        S    Apr18   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    Apr18   0:00 [kdevtmpfs]
+root          20  0.0  0.0      0     0 ?        I<   Apr18   0:00 [inet_frag_wq]
+root          21  0.0  0.0      0     0 ?        S    Apr18   0:00 [kauditd]
+root          22  0.0  0.0      0     0 ?        S    Apr18   0:00 [khungtaskd]
+root          23  0.0  0.0      0     0 ?        S    Apr18   0:00 [oom_reaper]
+root          24  0.0  0.0      0     0 ?        I<   Apr18   0:00 [writeback]
+root          25  0.0  0.0      0     0 ?        S    Apr18   0:07 [kcompactd0]
+root          26  0.0  0.0      0     0 ?        SN   Apr18   0:00 [ksmd]
+root          27  0.0  0.0      0     0 ?        SN   Apr18   0:00 [khugepaged]
+root          73  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kintegrityd]
+root          74  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kblockd]
+root          75  0.0  0.0      0     0 ?        I<   Apr18   0:00 [blkcg_punt_bio]
+root          76  0.0  0.0      0     0 ?        I<   Apr18   0:00 [tpm_dev_wq]
+root          77  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ata_sff]
+root          78  0.0  0.0      0     0 ?        I<   Apr18   0:00 [md]
+root          79  0.0  0.0      0     0 ?        I<   Apr18   0:00 [edac-poller]
+root          80  0.0  0.0      0     0 ?        I<   Apr18   0:00 [devfreq_wq]
+root          81  0.0  0.0      0     0 ?        S    Apr18   0:00 [watchdogd]
+root          83  0.0  0.0      0     0 ?        I<   Apr18   0:02 [kworker/0:1H-kblockd]
+root          85  0.0  0.0      0     0 ?        S    Apr18   0:00 [kswapd0]
+root          86  0.0  0.0      0     0 ?        S    Apr18   0:00 [ecryptfs-kthrea]
+root          88  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kthrotld]
+root          89  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/24-pciehp]
+root          90  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/25-pciehp]
+root          91  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/26-pciehp]
+root          92  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/27-pciehp]
+root          93  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/28-pciehp]
+root          94  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/29-pciehp]
+root          95  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/30-pciehp]
+root          96  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/31-pciehp]
+root          97  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/32-pciehp]
+root          98  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/33-pciehp]
+root          99  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/34-pciehp]
+root         100  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/35-pciehp]
+root         101  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/36-pciehp]
+root         102  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/37-pciehp]
+root         103  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/38-pciehp]
+root         104  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/39-pciehp]
+root         105  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/40-pciehp]
+root         106  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/41-pciehp]
+root         107  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/42-pciehp]
+root         108  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/43-pciehp]
+root         109  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/44-pciehp]
+root         110  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/45-pciehp]
+root         111  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/46-pciehp]
+root         112  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/47-pciehp]
+root         113  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/48-pciehp]
+root         114  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/49-pciehp]
+root         115  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/50-pciehp]
+root         116  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/51-pciehp]
+root         117  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/52-pciehp]
+root         118  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/53-pciehp]
+root         119  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/54-pciehp]
+root         120  0.0  0.0      0     0 ?        S    Apr18   0:00 [irq/55-pciehp]
+root         121  0.0  0.0      0     0 ?        I<   Apr18   0:00 [acpi_thermal_pm]
+root         123  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_0]
+root         124  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_0]
+root         125  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_1]
+root         126  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_1]
+root         128  0.0  0.0      0     0 ?        I<   Apr18   0:00 [vfio-irqfd-clea]
+root         130  0.0  0.0      0     0 ?        I<   Apr18   0:00 [mld]
+root         131  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ipv6_addrconf]
+root         141  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kstrp]
+root         144  0.0  0.0      0     0 ?        I<   Apr18   0:00 [zswap-shrink]
+root         145  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kworker/u3:0]
+root         150  0.0  0.0      0     0 ?        I<   Apr18   0:00 [charger_manager]
+root         193  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_2]
+root         194  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_2]
+root         195  0.0  0.0      0     0 ?        I<   Apr18   0:00 [vmw_pvscsi_wq_2]
+root         196  0.0  0.0      0     0 ?        I<   Apr18   0:00 [cryptd]
+root         197  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_3]
+root         198  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_3]
+root         199  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_4]
+root         200  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_4]
+root         206  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_5]
+root         210  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_5]
+root         211  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_6]
+root         216  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_6]
+root         221  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_7]
+root         222  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_7]
+root         223  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_8]
+root         225  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_8]
+root         226  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_9]
+root         228  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_9]
+root         230  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_10]
+root         232  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_10]
+root         234  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_11]
+root         236  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_11]
+root         238  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_12]
+root         240  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_12]
+root         243  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_13]
+root         245  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_13]
+root         247  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_14]
+root         249  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ttm_swap]
+root         250  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_14]
+root         252  0.0  0.0      0     0 ?        S    Apr18   0:15 [irq/16-vmwgfx]
+root         254  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_15]
+root         256  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc0]
+root         258  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_15]
+root         259  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_16]
+root         262  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_16]
+root         263  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_17]
+root         265  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_17]
+root         267  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc1]
+root         269  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_18]
+root         271  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc2]
+root         272  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_18]
+root         273  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc3]
+root         274  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_19]
+root         275  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc4]
+root         276  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_19]
+root         277  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc5]
+root         278  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_20]
+root         279  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc6]
+root         280  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_20]
+root         281  0.0  0.0      0     0 ?        S    Apr18   0:00 [card0-crtc7]
+root         282  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_21]
+root         283  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_21]
+root         284  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_22]
+root         285  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_22]
+root         286  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_23]
+root         287  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_23]
+root         288  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_24]
+root         289  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_24]
+root         291  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_25]
+root         292  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_25]
+root         294  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_26]
+root         295  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_26]
+root         296  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_27]
+root         297  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_27]
+root         298  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_28]
+root         299  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_28]
+root         300  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_29]
+root         301  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_29]
+root         302  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_30]
+root         303  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_30]
+root         304  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_31]
+root         305  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_31]
+root         306  0.0  0.0      0     0 ?        S    Apr18   0:00 [scsi_eh_32]
+root         307  0.0  0.0      0     0 ?        I<   Apr18   0:00 [scsi_tmf_32]
+root         340  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kdmflush]
+root         374  0.0  0.0      0     0 ?        I<   Apr18   0:00 [raid5wq]
+root         425  0.0  0.0      0     0 ?        S    Apr18   0:01 [jbd2/dm-0-8]
+root         426  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ext4-rsv-conver]
+root         496  0.0  0.5  64252 22032 ?        S<s  Apr18   0:01 /lib/systemd/systemd-journald
+root         528  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kaluad]
+root         529  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpath_rdacd]
+root         530  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpathd]
+root         531  0.0  0.0      0     0 ?        I<   Apr18   0:00 [kmpath_handlerd]
+root         532  0.0  0.6 354888 27100 ?        SLsl Apr18   0:16 /sbin/multipathd -d -s
+root         536  0.0  0.1  25964  6796 ?        Ss   Apr18   0:00 /lib/systemd/systemd-udevd
+root         665  0.0  0.0      0     0 ?        S    Apr18   0:00 [jbd2/sda2-8]
+root         666  0.0  0.0      0     0 ?        I<   Apr18   0:00 [ext4-rsv-conver]
+systemd+     702  0.0  0.1  89360  6508 ?        Ssl  Apr18   0:00 /lib/systemd/systemd-timesyncd
+root         754  0.0  0.2  51144 11800 ?        Ss   Apr18   0:00 /usr/bin/VGAuthService
+root         756  0.0  0.2 315116  9644 ?        Ssl  Apr18   3:34 /usr/bin/vmtoolsd
+systemd+     877  0.0  0.2  16248  8280 ?        Ss   Apr18   0:00 /lib/systemd/systemd-networkd
+systemd+     879  0.0  0.3  25536 12648 ?        Ss   Apr18   0:00 /lib/systemd/systemd-resolved
+root         920  0.0  0.0   6896  2868 ?        Ss   Apr18   0:00 /usr/sbin/cron -f -P
+message+     921  0.0  0.1   8896  4608 ?        Ss   Apr18   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         929  0.0  0.4  32732 19032 ?        Ss   Apr18   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         930  0.0  0.1 234496  6812 ?        Ssl  Apr18   0:00 /usr/libexec/polkitd --no-debug
+syslog       931  0.0  0.1 222404  5268 ?        Ssl  Apr18   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         933  0.0  0.7 1319680 31836 ?       Ssl  Apr18   0:10 /usr/lib/snapd/snapd
+root         934  0.0  0.1  15556  7520 ?        Ss   Apr18   0:00 /lib/systemd/systemd-logind
+root         936  0.0  0.3 392596 12800 ?        Ssl  Apr18   0:00 /usr/libexec/udisks2/udisksd
+root         942  0.0  0.1   7824  4312 tty1     Ss   Apr18   0:00 /bin/login -p --
+root         972  0.0  0.3 317964 12392 ?        Ssl  Apr18   0:00 /usr/sbin/ModemManager
+root         992  0.0  0.5 109756 21504 ?        Ssl  Apr18   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1883  0.0  0.2 313224  8956 ?        Ssl  Apr18   0:00 /usr/libexec/upowerd
+student     2056  0.0  0.2  17108  9500 ?        Ss   Apr18   0:00 /lib/systemd/systemd --user
+student     2058  0.0  0.1 104984  5020 ?        S    Apr18   0:00 (sd-pam)
+student     2064  0.0  0.1   8744  5180 tty1     S    Apr18   0:00 -bash
+root        2161  0.0  0.1  11504  5496 tty1     S+   Apr18   0:00 sudo -s
+root        2162  0.0  0.0  11504   884 pts/0    Ss   Apr18   0:00 sudo -s
+root        2163  0.0  0.1   7636  4084 pts/0    S+   Apr18   0:00 /bin/bash
+root        3026  0.0  0.5 295584 20464 ?        Ssl  Apr19   0:01 /usr/libexec/packagekitd
+root        3891  0.0  0.2  15432  9084 ?        Ss   Apr19   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       50720  0.0  0.0      0     0 ?        I    Apr20   0:00 [kworker/0:1-cgroup_destroy]
+root       53881  0.0  0.0      0     0 ?        I    14:49   0:00 [kworker/u2:1-events_unbound]
+root       54093  0.0  0.2  17188 10840 ?        Ss   16:07   0:00 sshd: student [priv]
+student    54141  0.0  0.1  17320  7972 ?        S    16:07   0:00 sshd: student@pts/1
+student    54142  0.0  0.1   8732  5400 pts/1    Ss+  16:07   0:00 -bash
+root       54212  0.0  0.2  17188 10812 ?        Ss   16:09   0:00 sshd: student [priv]
+student    54269  0.0  0.1  17320  7944 ?        S    16:10   0:00 sshd: student@pts/2
+student    54270  0.0  0.1   8732  5420 pts/2    Ss+  16:10   0:00 -bash
+root       54371  0.0  0.0      0     0 ?        I    16:22   0:02 [kworker/0:0-events]
+root       54385  0.0  0.0      0     0 ?        I    16:57   0:00 [kworker/u2:0-events_power_efficient]
+root       54400  0.0  0.0      0     0 ?        I    17:21   0:00 [kworker/u2:2]
+root       54401  0.0  0.2  17188 11080 ?        Ss   17:22   0:00 sshd: student [priv]
+student    54499  0.0  0.2  17324  8180 ?        S    17:22   0:00 sshd: student@notty
+student    54500  0.0  0.0   7372  3656 ?        Ss   17:22   0:00 bash -c hostname && date && uptime && cat /proc/cpuinfo | grep 'model name' | uniq && free -h | awk '/^Mem/ {print $2}' && df -h | awk '/^\// {print $2}' && ip addr show && ps aux && cat /etc/passwd
+student    54512  0.0  0.0  10072  1560 ?        R    17:22   0:00 ps aux
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:x:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:x:105:1::/var/cache/pollinate:/bin/false
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:x:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:x:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:109:115::/nonexistent:/usr/sbin/nologin
+tss:x:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:x:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+student:x:1000:1000:student:/home/student:/bin/bash
+lxd:x:999:100::/var/snap/lxd/common/lxd:/bin/false
+fwupd-refresh:x:113:119:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+
+
+Timestamp: 2024-04-21 17:34:10
+ 17:34:08 up 2 days, 19:57,  4 users,  load average: 0.08, 0.02, 0.01
+
+
+Timestamp: 2024-04-21 17:36:26
+ 17:36:24 up 2 days, 19:59,  4 users,  load average: 0.01, 0.00, 0.00
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       257Mi       1.6Gi       1.0Mi       2.0Gi       3.3Gi
+Swap:          1.8Gi       0.0Ki       1.8Gi
+
+
+Timestamp: 2024-04-21 17:37:49
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       257Mi       1.6Gi       1.0Mi       2.0Gi       3.3Gi
+Swap:          1.8Gi       0.0Ki       1.8Gi
+
+
+Timestamp: 2024-04-21 17:38:44
+%Cpu(s):  0.0 us,  6.2 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+

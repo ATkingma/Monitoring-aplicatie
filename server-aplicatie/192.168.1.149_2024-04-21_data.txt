@@ -1,0 +1,61 @@
+Timestamp: 2024-04-21 16:11:30
+localhost.localdomain
+Sun Apr 21 16:06:05 CEST 2024
+ 16:06:05 up 2 days, 19:24,  1 user,  load average: 0.00, 0.01, 0.05
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.7G
+14G
+1014M
+
+
+Timestamp: 2024-04-21 17:22:27
+localhost.localdomain
+Sun Apr 21 17:17:01 CEST 2024
+ 17:17:01 up 2 days, 20:35,  1 user,  load average: 0.00, 0.01, 0.05
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.7G
+14G
+1014M
+
+
+Timestamp: 2024-04-21 17:26:29
+localhost.localdomain
+Sun Apr 21 17:21:03 CEST 2024
+ 17:21:03 up 2 days, 20:39,  1 user,  load average: 0.00, 0.01, 0.05
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+3.7G
+14G
+1014M
+
+
+Timestamp: 2024-04-21 17:28:24
+ 17:22:59 up 2 days, 20:41,  1 user,  load average: 0.00, 0.01, 0.05
+
+
+Timestamp: 2024-04-21 17:33:54
+ 17:28:29 up 2 days, 20:46,  1 user,  load average: 0.00, 0.01, 0.05
+
+
+Timestamp: 2024-04-21 17:34:12
+ 17:28:46 up 2 days, 20:47,  1 user,  load average: 0.00, 0.01, 0.05
+
+
+Timestamp: 2024-04-21 17:36:28
+ 17:31:02 up 2 days, 20:49,  1 user,  load average: 0.00, 0.01, 0.05
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+              total        used        free      shared  buff/cache   available
+Mem:           3.7G        411M        1.1G         16M        2.2G        3.0G
+Swap:          1.6G          0B        1.6G
+
+
+Timestamp: 2024-04-21 17:37:50
+model name	: Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+              total        used        free      shared  buff/cache   available
+Mem:           3.7G        411M        1.1G         16M        2.2G        3.0G
+Swap:          1.6G          0B        1.6G
+
+
+Timestamp: 2024-04-21 17:38:45
+%Cpu(s):  0.0 us, 11.8 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+

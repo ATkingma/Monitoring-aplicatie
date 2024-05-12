@@ -13,8 +13,8 @@ public class DataCollector {
 
     public static void main(String[] args) {
         Timer timer = new Timer();
-        int delay = 0; // initial delay
-        int period = 15 * 60 * 1000; // repeat every 15 minutes
+        int delay = 0;
+        int period = 15 * 60 * 1000;
 
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
@@ -30,7 +30,7 @@ public class DataCollector {
 
                 DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-                for (int i = 0; i < hosts.length; i++) {
+                for (int i = 0; i < hosts.length; i++) {//elke host
                     String host = hosts[i];
                     String user = usernames[i];
                     String password = passwords[i];
@@ -69,7 +69,7 @@ public class DataCollector {
                         String diskSpace = extractDiskSpace(diskInfoLines[1]);
                         String freeDiskSpace = extractFreeDiskSpace(diskInfoLines[1]);
 
-                        // Print values that are going to be inserted
+                        //printje voor het .bat file zodat je kan checken of alles goed is gegaan
                         System.out.println("Data to be inserted into component_data table:");
                         System.out.println("Host: " + host);
                         System.out.println("Timestamp: " + LocalDateTime.now().format(dateFormatter));
@@ -84,7 +84,7 @@ public class DataCollector {
                         System.out.println("Disk Space: " + diskSpace);
                         System.out.println("Free Disk Space: " + freeDiskSpace);
 
-                        // Insert data into database
+
                         saveDataToDatabase(host, uptime, cpuType, runningUserProcesses, runningKernelProcesses, idleTime,
                                 ramTotal, ramUsed, ramFree, diskSpace, freeDiskSpace,
                                 databaseHostname, databasePort, databaseName, databaseUsername, databasePassword);
@@ -132,16 +132,17 @@ public class DataCollector {
         }
     }
 
+
+    //deze extract functies boeien geen fuck
     private static String extractCpuType(String cpuInfo) {
         String[] parts = cpuInfo.split(":");
         if (parts.length > 1) {
-            return parts[1].trim(); // Assuming CPU type appears after ":" character
+            return parts[1].trim();
         }
-        return "N/A"; // Return "N/A" if CPU type extraction fails
+        return "N/A";
     }
 
     private static int extractRunningKernelProcesses(String processInfo) {
-        // Count the lines containing '[k]' which indicates a kernel process
         int count = 0;
         String[] lines = processInfo.split("\\r?\\n");
         for (String line : lines) {
@@ -153,7 +154,6 @@ public class DataCollector {
     }
 
     private static int extractUserTasks(String processInfo) {
-        // Count the lines not containing '[k]', as they indicate user tasks
         int count = 0;
         String[] lines = processInfo.split("\\r?\\n");
         for (String line : lines) {
@@ -165,7 +165,6 @@ public class DataCollector {
     }
 
     private static float extractIdleTime(String cpuInfo) {
-        // Extract the idle time percentage from the 'top' command output
         String[] parts = cpuInfo.split(",");
         for (String part : parts) {
             if (part.contains("id")) {
@@ -173,24 +172,24 @@ public class DataCollector {
                 return Float.parseFloat(idlePercentage);
             }
         }
-        return 0.0f; // Return 0.0 if idle time extraction fails
+        return 0.0f;
     }
 
 
     private static String extractDiskSpace(String diskInfo) {
         String[] parts = diskInfo.split("\\s+");
         if (parts.length > 1) {
-            return parts[1]; // Assuming disk space appears as second element
+            return parts[1];
         }
-        return "N/A"; // Return "N/A" if disk space extraction fails
+        return "N/A";
     }
 
     private static String extractFreeDiskSpace(String diskInfo) {
         String[] parts = diskInfo.split("\\s+");
         if (parts.length > 3) {
-            return parts[3]; // Assuming free disk space appears as fourth element
+            return parts[3];
         }
-        return "N/A"; // Return "N/A" if free disk space extraction fails
+        return "N/A";
     }
 
     private static void saveDataToDatabase(String host, String uptime, String cpuType, float runningUserProcesses,
